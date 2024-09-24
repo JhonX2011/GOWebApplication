@@ -17,8 +17,8 @@ const (
 
 type Application struct {
 	*web.Router
-
-	logger  logger.Logger
+	Logger logger.Logger
+	
 	address string
 }
 
@@ -42,7 +42,7 @@ func NewWebApplication() (*Application, error) {
 
 	return &Application{
 		Router:  web.New(),
-		logger:  l,
+		Logger:  l,
 		address: address,
 	}, nil
 }
