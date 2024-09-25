@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/JhonX2011/GOWebApplication/api/utils/logger"
 	"github.com/JhonX2011/GOWebApplication/api/web"
+	"github.com/JhonX2011/GOWebApplication/utils/logger"
 )
 
 const (
@@ -18,7 +18,7 @@ const (
 type Application struct {
 	*web.Router
 	Logger logger.Logger
-	
+
 	address string
 }
 
